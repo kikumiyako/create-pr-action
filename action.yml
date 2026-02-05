@@ -26,7 +26,7 @@ runs:
       run: |
         echo "branch=${BRANCH}" >> "${GITHUB_OUTPUT}"
         git config --global user.name "${USER_NAME}"
-        git config --global user.emal "${EMAIL}"
+        git config --global user.email "${EMAIL}"
         git switch -c "${BRANCH}"
         git add .
         git commit -m "${MESSAGE}"
